@@ -224,9 +224,9 @@ PaddleTop.Width);
                 Ball.Speed = GameConstants.DefaultInitialBallSpeed;
                 HitSound.Play();
             }
-            
 
 
+            Ball.Speed = MathHelper.Clamp(Ball.Speed,0,GameConstants.MaxBallSpeed);
 
             base.Update(gameTime);
         }

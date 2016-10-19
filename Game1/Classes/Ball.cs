@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
+using Game1.Classes;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,13 @@ namespace Game1
 {
     public class Ball : Sprite
     {
-
+        //private float _speed;
         /// <summary >
         /// Defines current ball speed in time .
         /// </ summary >
-        public float Speed { get; set; }
+
+        public float Speed{ get; set; }
+            
         public float BumpSpeedIncreaseFactor { get; set; }
         /// <summary >
         /// Defines ball direction .
@@ -26,8 +29,9 @@ namespace Game1
         public Ball(int size, float speed, float
         defaultBallBumpSpeedIncreaseFactor) : base(size, size)
         {
+            
             Speed = speed;
-            BumpSpeedIncreaseFactor = 1;
+            BumpSpeedIncreaseFactor = defaultBallBumpSpeedIncreaseFactor;
             // Initial direction
             Direction = new Vector2(1,1);
         }
