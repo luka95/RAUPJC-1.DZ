@@ -15,6 +15,6 @@ namespace Game1.Classes
         public const float DefaultBallBumpSpeedIncreaseFactor = 1.05f;
         public const int DefaultBallSize = 40;
         public const int WallDefaultSize = 100;
-        public const float MaxBallSpeed = 0.8f;
+        public const float MaxBallSpeed = 1.0f;
     }
 }
